@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor0:#062601;
+    --cor1:#174004;
+    --cor2:#32402C;
+    --cor3:#F2F2F2;
+    --cor4:#0D0D0D;
+    --cor5:#063d1e;
+
+}
+
+body {
+    background-image: linear-gradient(to left, var(--cor2), var(--cor1));
+}
+
+.cabecalho {
+    background-color: var(--cor0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0.8px 0.8px 5px black;
+    position: fixed;
+    width: 100%;
+    color: white;
+    height: 90px;
+   
+}
+
+.titulo {
+    padding-left: 100px;
+}
+
+#openmenu, #closemenu {
+    border: none;
+    background-color: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    font-size: 20px;
+    display: flex;
+    gap: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.menu-itens {
+    color: white;
+}
+
+.menu-itens:hover {
+    color: red;
+}
+
+.imagem-topo {
+    width: 100%;
+    display: block;
+    max-height: 300px;
+    padding: 10px;
+}
+
+.artigo {
+    margin: auto;
+    width: 700px;
+    background-color: rgb(228, 223, 223);
+    text-align: justify;
+    padding: 50px;
+}
+
+aside {
+    display: flex;
+}
+
+.aside {
+    margin: auto;
+    margin-top: 20px;
+    width: 700px;
+    height: 200px;
+    background-color: rgb(228, 223, 223);
+    text-align: justify;
+    padding: 30px;
+    
+    
+}
+
+p { 
+    text-indent: 5.5mm;
+    font-size: 20px;
+    
+}
+
+h2 {
+    color: var(--cor1);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+footer {
+    height: 350px;
+    background-color: var(--cor0);
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+
+    
+}
+
+ul {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.contatos-div {
+    padding: 1px;
+}
+
+.infos {
+    font-size: 25px;
+    color: white;
+    display: block;
+    
+    
+    
+}
+
+.contatos {
+    padding: 25px;
+}
+
+
+@media only screen and (max-width: 1420px) {
+    .aside {
+        width: 500px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    aside {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .artigo {
+        width: 450px;
+    }
+    .aside {
+        width: 450px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    #openmenu, #closemenu {
+        display: block;
+    }
+
+    #openmenu {
+        margin-left: auto;
+    }
+
+    #closemenu {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        color: var(--cor2);
+    }
+
+    #menu {
+        position: fixed;
+        flex-direction: column;
+        width: 500px;
+        height: 600px;
+        padding-top: 100px;
+        background-color: var(--cor2);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0; 
+        border-radius: 5px;
+        box-shadow: 0.5px 0.5px 8px black;
+        
+
+    }
+
+    .menu-itens {
+        font-size: 28px;
+    }
+
+    footer {
+        height: 500px;
+    }
+    
+}

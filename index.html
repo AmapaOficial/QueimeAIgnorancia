@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veja tudo sobre consequências causas pelas queimadas, maiores desastres relaciona a queimadas e muito mais.">
+    <title>Queime a ignorância</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cab-img" src="imagens/logo.png" alt="logo">
+
+        <button id="openmenu">&#9776;</button>
+        <nav id="menu" class="menu">
+            <button id="closemenu">X</button>
+            <a class="menu-itens" href="http://www.meioambiente.mg.gov.br/-denuncia-ambiental-solicitar-fiscalizacao-ambiental">Denúncia</a>
+            <a class="menu-itens" href="sobre.html">Parceiros</a>
+        </nav>
+    </header>
+
+
+    <main class="principal">
+        <section class="p1">
+            <div class="p1-escrito">
+                <h1 class="p1-titulo">Queime a ignorância</h1>
+                <h2 class="p1-subtitulo">Diga não a quem mata o meio ambiente!</h2>
+                 <a href="parceiros.html"><button class="p1-butao">ENTRAR</button></a>
+            </div>
+                <img class="p1-img" src="imagens/img-mid.png" alt="img-mid">
+        </section>
+            
+        <section class="p2">
+                <h3 class="p2-titulo">O que somos?</h3>
+                <p class="p2-paragrafo">Somos um grupo de pessoas dispostas a conscientizar e informar sobre o meio ambiente.</p>
+                <p class="p2-paragrafo">Venha com a gente.</p>
+        </section>
+    </main>
+
+
+    <footer class="rodape">
+        <footer class="contatos">
+            <section class="infos">
+                <div class="contatos-div">Fundadores: Luiza Firmo, Lívia Braga, Gabriel Antunes, Evelin Pinho, Maria Luiza.</div>
+                <div class="contatos-div">Projeto Acadêmico</div>
+                
+            
+            </section>
+            <section class="contatos">
+                <div class="contatos-div">INSTAGRAM: @Queimeaignorancia</div>
+                <div class="contatos-div">Whatsapp: (31) 972374828</div>
+                
+            </section>
+            <section> 
+                <div> SENAI ITABIRITO</div>
+                <div class="contatos-div">R. João Pinheiro, 895 - Santa Efigênia, Itabirito - MG, 35450-000</div>
+            </section>
+        </footer>
+    </footer>
+
+    <script type="text/javascript">
+        openmenu.addEventListener('click', () => {
+        menu.style.display = 'flex'
+        
+        
+
+        setTimeout(() => {
+            menu.style.opacity = '1'
+            menu.style.right = '0'
+        }, 10)
+        
+    })
+        closemenu.addEventListener('click', () => {
+        menu.style.opacity = '1'
+
+        
+        setTimeout(() => {
+            menu.removeAttribute('style') 
+        }, 200)
+
+    })
+
+    </script>
+</body>
+</html>

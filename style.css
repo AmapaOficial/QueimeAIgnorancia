@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poltawski+Nowy&family=Sarala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor0:#062601;
+    --cor1:#174004;
+    --cor2:#32402C;
+    --cor3:#F2F2F2;
+    --cor4:#0D0D0D;
+    --cor5:#063d1e;
+
+}
+
+
+
+body {
+    background-color: var(--cor0);
+}
+.cabecalho {
+    background-color: var(--cor0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    height: 90px;
+    
+}
+
+.cab-img {
+    height: 72px;
+    padding-top: 15px;
+}
+
+#openmenu, #closemenu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.menu {
+    font-size: 20px;
+    display: flex;
+    gap: 32px;
+}
+
+.menu-itens{
+    color: antiquewhite;
+    font-family: 'Sarala', sans-serif;
+}
+
+.menu-itens:hover {
+    color: rgb(236, 214, 196, 0.53);
+}
+.principal {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+
+.p1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.p1-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.p1-titulo {
+    font-family: 'Bebas Neue', serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7;
+}
+
+.p1-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.p1-butao {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px black;
+    border-radius: 20px;
+    margin: auto;
+    
+}
+
+.p1-butao:hover {
+    background-color: rgb(236, 214, 196, 0.53);
+    transition-duration: 0.2s;
+}
+
+.p1-img {
+    height: 400px;
+    padding-top: 20px;
+}
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.p2-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Bebas Neue', serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    margin-bottom: 16px;
+}
+
+.p2-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ECD6C4;
+}
+
+.rodape {
+    border-top: 0.4px solid #FFF2E7;
+    
+    
+
+}
+
+footer div{
+    text-align: center;
+    font-size: 16px;
+    color: #FFF2E7;
+    background-color: var(--cor0);
+    height: 30px;
+}
+
+@media only screen and (max-width: 930px) {
+    .p1-titulo {
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    .p1-subtitulo {
+        padding-left: 20px;
+    }
+
+    .p1-butao {
+        padding-left: 20px;
+    }
+
+}
+    
+
+
+@media only screen and (max-width: 750px) {
+    .p1 {
+        flex-direction: column;
+    }
+
+    .p1-img {
+        padding-top: 40px;
+    }
+
+    .p2-paragrafo {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #openmenu, #closemenu {
+        display: block;
+    }
+    
+    .cabecalho {
+        justify-content: end;
+        padding-right: 0;
+    }
+
+    .cab-img {
+        padding-left: 80px;
+    }
+
+    #openmenu {
+        margin-left: auto;
+        color: rgb(86, 61, 61);
+        padding-right: 80px;
+    }
+
+    #closemenu {
+        position: fixed;
+        right: 5px;
+        top: 45px;
+        color: rgb(86, 61, 61);
+
+    }
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        width: 500px;
+        height: 1000px;
+        background: rgba(255, 255, 255, 0.98);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding-top: 500px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px rgb(0, 0, 0);
+        display: none;
+        opacity: 0;
+        transition: 0,3s;
+        
+    }
+
+    .menu-itens {
+        color: brown;
+    }
+}
